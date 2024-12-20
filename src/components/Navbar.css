@@ -1,0 +1,43 @@
+/* Base styles for the navbar */
+.navbar {
+    @apply top-0 w-full z-10 p-4;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Container styles */
+  .container2 {
+    @apply mx-auto flex justify-between items-center;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 640px) {
+    .navbar {
+      @apply p-2;
+    }
+  
+    .container {
+      @apply flex-row items-start;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 641px) and (max-width: 768px) {
+    .navbar {
+      @apply p-3;
+    }
+  
+    .container {
+      @apply flex-row items-center;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 769px) {
+    .navbar {
+      @apply p-4;
+    }
+  
+    .container {
+      @apply flex-row items-center;
+    }
+  }
